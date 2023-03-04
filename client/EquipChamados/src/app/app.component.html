@@ -1,0 +1,36 @@
+<div class="container-fluid" id="content">
+  <nav class="navbar navbar-expand-lg bg">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLinkActive="true" routerLink="home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Chamados
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="chamado/cadastrar">Cadastrar</a></li>
+              <li><a class="dropdown-item" routerLink="chamado/gerenciar">Gerenciar</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Equipamentos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="equipamento/cadastrar">Cadastrar</a></li>
+              <li><a class="dropdown-item" routerLink="equipamento/gerenciar">Gerenciar</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+  </nav>
+  <div class="row">
+    <div class="col">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="container-fluid">
+
+    <div class="row m-3 justify-content-center">
+        <div class="col-4">
+            <hr>
+            <h2 class="fw-ligth fs-3 text-center">{{editarCadastro ? 'Editar Chamado':'Cadastrar Chamado'}}</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+                <div class="form-floating mb-3">
+                    <select class="form-select" formControlName="equipamento"
+                        [ngClass]="{'valido':form.get('equipamento')?.valid , 'invalido':!form.get('equipamento')?.valid && !form.get('equipamento')?.pristine}">
+                        <option selected></option>
+                        <option *ngFor="let equipamento of equipamentos" [ngValue]="equipamento">
+                            {{equipamento?.nome}} - {{equipamento?.nrSerie}} - {{equipamento?.fabricante}}
+                        </option>
+                    </select>
+                    <label for="equipamento">Equipamento</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control"
+                        [ngClass]="{'valido':form.get('titulo')?.valid , 'invalido':!form.get('titulo')?.valid && !form.get('titulo')?.pristine}"
+                        formControlName="titulo">
+                    <label for="titulo">Título</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea type="text-area" class="form-control" ng-Trim="false" maxlength="400"
+                        [ngClass]="{'valido':form.get('descricao')?.valid , 'invalido':!form.get('descricao')?.valid && !form.get('descricao')?.pristine}"
+                        formControlName="descricao"></textarea>
+                    <label for="descricao">Descrição - <span class="text-muted">{{400 - form.value.descricao?.length}} Caracteres restantes</span></label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" formControlName="dataAbertura"
+                        [ngClass]="{'valido':form.get('dataAbertura')?.valid , 'invalido':!form.get('dataAbertura')?.valid && !form.get('dataAbertura')?.pristine}">
+                    <label for="dataAbertura">Data Chamado</label>
+                </div>
+                <div class="row d-flex">
+                    <div class="col-3 mb-3">
+                        <button class="btn btn-success" type="submit" [disabled]="!this.form.valid">Enviar</button>
+                    </div>
+                    <div class="col-3 mb-3">
+                        <button class="btn btn-primary" type="button" (click)="voltar(editarCadastro)">Voltar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

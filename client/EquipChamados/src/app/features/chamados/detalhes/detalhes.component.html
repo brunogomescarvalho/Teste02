@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row m-3 justify-content-center">
+        <div class="col-4">
+            <hr>
+            <h2 class="fw-ligth fs-3 text-center">Detalhes Chamado - ID: {{chamado.id}}</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="card" style="width: 24rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Titulo: </strong>{{chamado.titulo}}</li>
+                <li class="list-group-item"><strong>Descrição: </strong>{{chamado.descricao}}</li>
+                <li class="list-group-item"><strong>Equipamento Id:</strong> {{chamado.equipamento.id}}</li>
+                <li class="list-group-item"><strong>Equipamento Nome:</strong> {{chamado.equipamento.nome}}</li>
+                <li class="list-group-item"><strong>Equipamento Nr Série: </strong>{{chamado.equipamento.nrSerie}}</li>
+                <li class="list-group-item"><strong>Data Abertura:</strong> {{chamado.dataAbertura |date: 'dd/MM/yyyy'}}</li>
+                <li class="list-group-item"><strong>Dias Em Aberto: </strong>{{chamado.diasEmAberto}}</li>
+            </ul>
+            <div class="col-4 m-2">
+                <a class="btn btn-primary" type="button" routerLink="../../gerenciar">Voltar</a>
+            </div>
+        </div>
+    </div>
+</div>

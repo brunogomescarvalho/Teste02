@@ -1,0 +1,15 @@
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\bin\Debug\net6.0\infraData.deps.json
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\bin\Debug\net6.0\infraData.dll
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\bin\Debug\net6.0\infraData.pdb
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\bin\Debug\net6.0\domain.dll
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\bin\Debug\net6.0\domain.pdb
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\obj\Debug\net6.0\infraData.csproj.AssemblyReference.cache
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\obj\Debug\net6.0\infraData.GeneratedMSBuildEditorConfig.editorconfig
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\obj\Debug\net6.0\infraData.AssemblyInfoInputs.cache
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\obj\Debug\net6.0\infraData.AssemblyInfo.cs
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\obj\Debug\net6.0\infraData.csproj.CoreCompileInputs.cache
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\obj\Debug\net6.0\infraData.csproj.CopyComplete
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\obj\Debug\net6.0\infraData.dll
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\obj\Debug\net6.0\refint\infraData.dll
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\obj\Debug\net6.0\infraData.pdb
+C:\AP\testes\teste02\ControleDaLojaSolution\service\infraData\obj\Debug\net6.0\ref\infraData.dll

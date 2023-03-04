@@ -1,0 +1,16 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.valido {
+    border-color: rgb(108, 185, 113);
+    border-left: 4px solid rgb(108, 185, 113);
+
+}
+
+.invalido {
+    border-color: rgb(242, 84, 84);
+    border-left: 4px solid rgb(242, 84, 84);
+}
